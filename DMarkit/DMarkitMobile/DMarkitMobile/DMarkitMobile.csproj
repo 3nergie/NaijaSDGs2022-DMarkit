@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Style\" />
+    <None Remove="Style\Resources\" />
+    <None Remove="Style\Fonts\Pacifico-Regular.ttf" />
+    <None Remove="Style\Fonts\Inter-Black.ttf" />
+    <None Remove="Style\Fonts\Inter-Bold.ttf" />
+    <None Remove="Style\Fonts\Inter-ExtraBold.ttf" />
+    <None Remove="Style\Fonts\Inter-Medium.ttf" />
+    <None Remove="Style\Fonts\Inter-Regular.ttf" />
+    <None Remove="Controls\" />
+    <None Remove="Style\Fonts\materialdesignicons-webfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Style\" />
+    <Folder Include="Style\Resources\" />
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Style\Fonts\Pacifico-Regular.ttf" />
+    <EmbeddedResource Include="Style\Fonts\Inter-Black.ttf" />
+    <EmbeddedResource Include="Style\Fonts\Inter-Bold.ttf" />
+    <EmbeddedResource Include="Style\Fonts\Inter-ExtraBold.ttf" />
+    <EmbeddedResource Include="Style\Fonts\Inter-Medium.ttf" />
+    <EmbeddedResource Include="Style\Fonts\Inter-Regular.ttf" />
+    <EmbeddedResource Include="Style\Fonts\materialdesignicons-webfont.ttf" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:control="clr-namespace:DMarkitMobile.Controls"
+    x:Class="DMarkitMobile.Controls.CustomEntryView"
+    x:Name="CustomEntry">
+   <Grid RowDefinitions="Auto, Auto, Auto">
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="Title" Style="{StaticResource SubtitleText}" />
+            <Label
+                x:Name="RequiredField"
+                IsVisible="false"
+                Style="{StaticResource SubtitleText}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Text="*"
+                TextColor="Red" />
+        </StackLayout>
+        <Frame
+            x:Name="MainFrame"
+            Grid.Row="1"
+            Padding="{OnPlatform Android=10,
+                                 iOS=15}"
+            BackgroundColor="{StaticResource LightGray}"
+            BorderColor="{StaticResource Gray}"
+            CornerRadius="10"
+            HasShadow="False">
+            <Grid ColumnDefinitions="*,Auto">
+                <Image
+                    x:Name="ImageResource"
+                    HeightRequest="30"
+                    WidthRequest="30" />
+                <control:BorderlessEntry
+                    x:Name="EntryField"
+                    Focused="EntryField_Focused"
+                    IsSpellCheckEnabled="False"
+                    IsTextPredictionEnabled="False"
+                    Style="{StaticResource EntryStyle}"
+                    Text="{Binding Source={x:Reference CustomEntry}, Path=Text}"
+                    Unfocused="EntryField_Unfocused" />
+                <Image
+                    x:Name="PassWordImageSource"
+                    Grid.Column="1"
+                    HeightRequest="30"
+                    IsVisible="false"
+                    Source="eyetwo.png"
+                    WidthRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PassWordImageSource_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </Frame>
+        <Label
+            x:Name="ErrorText"
+            Grid.Row="2"
+            HorizontalOptions="End"
+            TextColor="Red" />
+    </Grid>
+</ContentView>
+

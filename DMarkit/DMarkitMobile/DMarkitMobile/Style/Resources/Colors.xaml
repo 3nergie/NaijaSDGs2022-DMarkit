@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="DMarkitMobile.Style.Resources.Colors"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="Light">#FFFFFF</Color>
+    <Color x:Key="LightWhite">#F8F8F8</Color>
+    <Color x:Key="LightGray">#FAFAFA</Color>
+    <Color x:Key="LightBackGroundGray">#F9F9F9</Color>
+    <Color x:Key="Black">#000000</Color>
+    <Color x:Key="BlackTextColor">#45444B</Color>
+    <Color x:Key="LightBlackTextColor">#979779</Color>
+    <Color x:Key="LightBlack">#A5A5A%</Color>
+    <Color x:Key="Gray">Gray</Color>
+    <Color x:Key="ExtraLightGray">#F2F2F2</Color>
+    <Color x:Key="BlueColor">#110BF4</Color>
+    <Color x:Key="DeepBlueColor">#00507C</Color>
+    <Color x:Key="LightGreenColor">#E9F8CC</Color>
+    <Color x:Key="WalletGreenColor">#F2FAD3</Color>
+   
+     <Color x:Key="LightBlackColor">#979979</Color>
+     <Color x:Key="FrameBorderColor">#E9E9E9</Color>
+
+
+</ResourceDictionary>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:control="clr-namespace:DMarkitMobile.Controls"
+     NavigationPage.HasNavigationBar="False"
+     xmlns:fonts="clr-namespace:Grocedy.Style.Icons"
+    Shell.NavBarIsVisible="False"
+     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+     ios:Page.UseSafeArea="true"
+    x:Class="DMarkitMobile.Views.SignupPage">
+    <Grid Padding="20" RowDefinitions="Auto,*" BackgroundColor="{StaticResource Light}">
+        <StackLayout >
+            <Grid>
+                <Label VerticalOptions="Center" HorizontalOptions="Start" FontFamily="IconFont" Text="{x:Static fonts:IconFont.ArrowLeft}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                 <Label Text="Sign Up" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
+            </Grid>
+        <control:CustomEntryView TitleText="FirstName" PlaceHolderText="Enter your first name"  IsRequired="True"/>
+        <control:CustomEntryView TitleText="LastName" PlaceHolderText="Enter your last name" IsRequired="True" />
+        <control:CustomEntryView TitleText="Email" PlaceHolderText="Enter your email" IsRequired="True" />
+        <control:CustomEntryView TitleText="confirm Email" PlaceHolderText="Enter your email" IsRequired="True" />
+             <Label Style="{StaticResource SubtitleText}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span CharacterSpacing="2" Text="Already have an account? " />
+                            <Span
+                                CharacterSpacing="3"
+                                Text="Sign In"
+                                TextColor="{StaticResource BlueColor}">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Register_Tapped" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+           </Label>
+    </StackLayout>
+         <Button Text="Next" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked" Grid.Row="1" VerticalOptions="Center"/>
+    </Grid>
+   
+</ContentPage>
+

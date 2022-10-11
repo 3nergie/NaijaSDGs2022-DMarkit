@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="DMarkitMobile.Style.Resources.CustomTemplate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:DMarkitMobile.Models.Responses">
+
+    <!--<DataTemplate x:Key="DropdownTemplate" x:DataType="model:Country">
+        <StackLayout
+            Margin="0,0,0,10"
+            Orientation="Horizontal"
+            Spacing="10"
+            VerticalOptions="Center">
+            <Label
+                Style="{StaticResource SubtitleText}"
+                Text="{Binding CountryName}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            <Label
+                Style="{StaticResource SubtitleText}"
+                Text="{Binding PhoneCode}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </DataTemplate>
+
+    <DataTemplate x:Key="CityDropdownTemplate" x:DataType="model:City">
+        <StackLayout
+            Margin="0,0,0,10"
+            Orientation="Horizontal"
+            Spacing="10"
+            VerticalOptions="Center">
+            <Label
+                Style="{StaticResource SubtitleText}"
+                Text="{Binding CityName}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </DataTemplate>
+
+    <DataTemplate x:Key="AreaDropdownTemplate" x:DataType="model:Area">
+        <StackLayout
+            Margin="0,0,0,10"
+            Orientation="Horizontal"
+            Spacing="10"
+            VerticalOptions="Center">
+            <Label
+                Style="{StaticResource SubtitleText}"
+                Text="{Binding AreaName}"
+                TextColor="Black"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </DataTemplate>-->
+
+
+</ResourceDictionary>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="DMarkitMobile.Style.Resources.Fonts"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <OnPlatform x:Key="OpenSansBoldFont" x:TypeArguments="x:String">
+        <On Platform="Android" Value="OpenSansBold" />
+        <On Platform="iOS" Value="OpenSansBold" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="OpenSansLightFont" x:TypeArguments="x:String">
+        <On Platform="Android" Value="OpenSansLight" />
+        <On Platform="iOS" Value="OpenSansLight" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="OpenSansRegularFont" x:TypeArguments="x:String">
+        <On Platform="Android" Value="OpenSansRegular" />
+        <On Platform="iOS" Value="OpenSansRegular" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="OpenSansSemiBoldFont" x:TypeArguments="x:String">
+        <On Platform="Android" Value="OpenSansSemiBold" />
+        <On Platform="iOS" Value="OpenSansSemiBold" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="MontserratBold" x:TypeArguments="x:String">
+        <On Platform="Android" Value="MontserratBold" />
+        <On Platform="iOS" Value="MontserratBold" />
+    </OnPlatform>
+
+     <OnPlatform x:Key="PacificoRegularFont" x:TypeArguments="x:String">
+        <On Platform="Android" Value="PacificoRegular" />
+        <On Platform="iOS" Value="PacificoRegular" />
+    </OnPlatform>
+</ResourceDictionary>

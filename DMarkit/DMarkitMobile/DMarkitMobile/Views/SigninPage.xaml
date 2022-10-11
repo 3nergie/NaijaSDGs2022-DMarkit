@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+     ios:Page.UseSafeArea="true"
+     NavigationPage.HasNavigationBar="False"
+      xmlns:fonts="clr-namespace:Grocedy.Style.Icons"
+    Shell.NavBarIsVisible="False"
+     xmlns:control="clr-namespace:DMarkitMobile.Controls"
+    x:Class="DMarkitMobile.Views.SigninPage">
+    <ScrollView>
+    <Grid Padding="20" RowDefinitions="Auto,*" BackgroundColor="{StaticResource Light}">
+         <StackLayout Spacing="20">
+             <Grid>
+                <!--<Label VerticalOptions="Center" HorizontalOptions="Start" FontFamily="IconFont" Text="{x:Static fonts:IconFont.ArrowLeft}"/>-->
+                 <Label Text="Sign Up" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
+              </Grid>
+               <control:CustomEntryView TitleText="FirstName" PlaceHolderText="Enter your first name"  IsRequired="True"/>
+            <control:CustomEntryView TitleText="Password" PlaceHolderText="Enter your password"  IsRequired="True" IsPassWordImage="True"/>
+              <Label Style="{StaticResource SubtitleText}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span CharacterSpacing="2" Text="Already have an account? " />
+                            <Span
+                                CharacterSpacing="3"
+                                Text="Sign In"
+                                TextColor="{StaticResource BlueColor}">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Register_Tapped" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label Text="Forget Password ?" Style="{StaticResource SubtitleText}" HorizontalOptions="End"    TextColor="{StaticResource BlueColor}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer   Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+             <Button Text="Sigin In" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked"  VerticalOptions="Center"/>
+
+            </StackLayout>
+            <StackLayout Margin="0,20,0,0" Grid.Row="1" >
+            <Label Text="OR" Style="{StaticResource SubtitleText}" HorizontalOptions="Center" />
+             <Label Text="Login with Finger Print" Style="{StaticResource SubtitleText}" HorizontalOptions="Center"  TextColor="{StaticResource BlueColor}"/>
+            <Label FontFamily="IconFont" Text="{x:Static fonts:IconFont.Fingerprint}" FontSize="32"  HorizontalOptions="Center" TextColor="{StaticResource BlueColor}"/>
+            </StackLayout>
+      </Grid>
+    </ScrollView>
+</ContentPage>
+

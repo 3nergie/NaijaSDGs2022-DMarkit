@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+     ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+     xmlns:fonts="clr-namespace:Grocedy.Style.Icons"
+    Shell.NavBarIsVisible="False"
+    xmlns:control="clr-namespace:DMarkitMobile.Controls"
+    x:Class="DMarkitMobile.Views.SiginupTwoPage">
+     <Grid Padding="20" RowDefinitions="Auto,*" BackgroundColor="{StaticResource Light}">
+         <StackLayout>
+             <Grid>
+                <Label VerticalOptions="Start" HorizontalOptions="Start" FontFamily="IconFont" Text="{x:Static fonts:IconFont.ArrowLeft}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                 <Label Text="Sign Up" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
+              </Grid>     
+            <control:CustomEntryView TitleText="Password" PlaceHolderText="Enter your password"  IsRequired="True" IsPassWordImage="True"/>
+            <control:CustomEntryView TitleText="Confirm Password" PlaceHolderText="Enter your password" IsRequired="True" IsPassWordImage="True" />
+            <control:CustomEntryView TitleText="Gender" PlaceHolderText="Select Gender" IsRequired="True" />
+            <control:CustomEntryView TitleText="Phone Number" PlaceHolderText="Enter your phone nuumber" IsRequired="True" />
+            <Label Style="{StaticResource SubtitleText}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span CharacterSpacing="2" Text="Already have an account? " />
+                            <Span
+                                CharacterSpacing="3"
+                                Text="Sign In"
+                                TextColor="{StaticResource BlueColor}">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+           </Label>
+        </StackLayout>
+             <Button Text="Sigin Up" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked"  Grid.Row="1" VerticalOptions="Center"/>
+
+      </Grid>
+</ContentPage>
+
