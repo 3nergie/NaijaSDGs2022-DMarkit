@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+     Shell.NavBarIsVisible="False"
+     xmlns:fonts="clr-namespace:Grocedy.Style.Icons"
+    x:Class="DMarkitMobile.Views.TransactionHistoryPage">
+   <Grid Padding="20" RowDefinitions="Auto,*" BackgroundColor="{StaticResource Light}">
+       <Grid>
+            <Label VerticalOptions="Center" HorizontalOptions="End" FontFamily="IconFont" Text="{x:Static fonts:IconFont.Bell}" TextColor="Blue">
+                <!--<Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>-->
+            </Label>
+                <Label Text="Transaction History" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
+        </Grid>
+        <ScrollView Grid.Row="1">
+
+
+        <StackLayout >
+            <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="red" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+            <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="red" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+
+                 <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="red" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+        </StackLayout>
+        </ScrollView>
+    
+    </Grid>
+</ContentPage>
+

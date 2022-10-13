@@ -15,12 +15,12 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="#173D8E" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#173D8E" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White"/>
@@ -38,9 +38,19 @@
                 <FontImageSource FontFamily="IconFont" Glyph="{x:Static fonts:IconFont.Home}" />
             </ShellContent.Icon>
         </ShellContent>
-        <ShellContent Title="DashBoard" ContentTemplate="{DataTemplate local:DashBoardPage}">
+        <ShellContent Title="Trade" ContentTemplate="{DataTemplate local:TradePage}">
             <ShellContent.Icon>
-                <FontImageSource FontFamily="IconFont" Glyph="{x:Static fonts:IconFont.Home}" />
+                <FontImageSource FontFamily="IconFont" Glyph="{x:Static fonts:IconFont.AccountCash}" />
+            </ShellContent.Icon>
+        </ShellContent>
+         <ShellContent Title="Transactions" ContentTemplate="{DataTemplate local:TransactionHistoryPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="IconFont" Glyph="{x:Static fonts:IconFont.History}" />
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Account" ContentTemplate="{DataTemplate local:AccountPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="IconFont" Glyph="{x:Static fonts:IconFont.AccountCircle}" />
             </ShellContent.Icon>
         </ShellContent>
     </TabBar>

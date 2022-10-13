@@ -2,9 +2,142 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+     Shell.NavBarIsVisible="False"
+     xmlns:fonts="clr-namespace:Grocedy.Style.Icons"
     x:Class="DMarkitMobile.Views.DashBoardPage">
-    <ContentPage.Content>
+  
+   <Grid RowSpacing="0" RowDefinitions="Auto,*">
+        <Grid BackgroundColor="#173D8E" Opacity=".9" RowDefinitions="Auto,*,30" Padding="20,30,30,40">
+              <Grid ColumnDefinitions="Auto,*,Auto">
+                <Frame Padding="0,0,0,0" Margin="0,0,0,0" HasShadow="False" CornerRadius="20">
+                <Image HeightRequest="60" Source="profile.jpg" Margin="0,0,0,0"/>
+                 </Frame>
+                <StackLayout Grid.Column="1" Padding="12,0,0,0">
+                    <Label Text="Welcome Back,"  Style="{StaticResource SubtitleText}" TextColor="{StaticResource Light}"/>
+                    <Label  Style="{StaticResource SemiBoldText}" Text="Jason Moosa "  TextColor="{StaticResource Light}"/>
+                 </StackLayout>
+                 <Label FontFamily="IconFont" Text="{x:Static fonts:IconFont.Bell}" Grid.Column="2" TextColor="White"  FontSize="24"/>
+              </Grid>
 
-    </ContentPage.Content>
+            <StackLayout Grid.Row="1" Padding="10,20,0,0" HorizontalOptions="Center" Spacing="0">
+                <Label Text="Active Balance"  FontFamily="PacificoRegular" FontSize="24"  TextColor="{StaticResource Light}" />
+                 <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span CharacterSpacing="2" Text="₦" FontSize="24" FontFamily="PacificoRegular" TextColor="{StaticResource Light}"/>
+                            <Span
+                                CharacterSpacing="3"
+                                Text="13,200.00" TextColor="{StaticResource Light}" FontSize="32" FontFamily="PacificoRegular" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </Grid>
+
+        <Grid BackgroundColor="{StaticResource LightBackGroundGray}" Grid.Row="1" RowDefinitions="Auto,*">
+            <Frame HasShadow="False" Padding="20" Margin="30" TranslationY="-80" VerticalOptions="Start" CornerRadius="20">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Spacing="10"> 
+                   <StackLayout>
+                        <Frame HasShadow="False" VerticalOptions="Center" CornerRadius="15"  HorizontalOptions="Center" BackgroundColor="{StaticResource LightBackGroundGray}"> 
+                             <Label FontFamily="IconFont" Text="{x:Static fonts:IconFont.Wallet}" TextColor="Blue"  FontSize="24"/>
+                        </Frame>
+                       <Label Text="Fund" HorizontalOptions="Center"  Style="{StaticResource SubtitleText}" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame HasShadow="False" VerticalOptions="Center" CornerRadius="15"  HorizontalOptions="Center" BackgroundColor="{StaticResource LightBackGroundGray}"> 
+                             <Label FontFamily="IconFont" Text="{x:Static fonts:IconFont.Wallet}" TextColor="Blue"  FontSize="24"/>
+                        </Frame>
+                       <Label Text="Withdraw" HorizontalOptions="Center"  Style="{StaticResource SubtitleText}" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame HasShadow="False" VerticalOptions="Center" CornerRadius="15"  HorizontalOptions="Center" BackgroundColor="{StaticResource LightBackGroundGray}"> 
+                             <Label FontFamily="IconFont" Text="{x:Static fonts:IconFont.Wallet}" TextColor="Blue"  FontSize="24"/>
+                        </Frame>
+                       <Label Text="card" Style="{StaticResource SubtitleText}" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame HasShadow="False" VerticalOptions="Center" CornerRadius="15"  HorizontalOptions="Center" BackgroundColor="{StaticResource LightBackGroundGray}"> 
+                             <Label FontFamily="IconFont" Text="{x:Static fonts:IconFont.Wallet}" TextColor="Blue"  FontSize="24"/>
+                        </Frame>
+                       <Label Text="others" Style="{StaticResource SubtitleText}" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+                <!--<CollectionView Grid.Row="1">
+                <CollectionView.Header>
+                    <ContentView>
+                        <Grid>
+                            <Label Text="Recent Transaction" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label Text="See All" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </ContentView>
+                </CollectionView.Header>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>-->
+              <ScrollView  Grid.Row="1" TranslationY="-80" Padding="0,0,0,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand"> 
+           <StackLayout Padding="20,0,20,0" VerticalOptions="FillAndExpand" >
+                    <Grid>
+                            <Label Text="Recent Transaction" VerticalOptions="Center" HorizontalOptions="Start" Style="{StaticResource SemiBoldText}" FontSize="16"/>
+                            <Label Text="See All" VerticalOptions="Center" HorizontalOptions="End" TextColor="Blue"/>
+                        </Grid>
+                    <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="red" />
+                        </Grid>
+                    </Frame>
+                     <Frame HasShadow="False"  CornerRadius="10" Padding="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Frame HasShadow="False" CornerRadius="10" BorderColor="Blue" Padding="10"> 
+                                <StackLayout>
+                                    <Label Text="14" HorizontalOptions="Center" FontFamily="PacificoRegular"/>
+                                    <Label Text="June" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                  <Label Text="Credit Alert" Style="{StaticResource SemiBoldText}" FontSize="16" />
+                                 <Label Text="Card transaction from bank" Style="{StaticResource SubtitleText}" />
+                            </StackLayout>
+                            <Label Grid.Column="2" Text="₦ 10,000" FontFamily="PacificoRegular" FontSize="16" VerticalOptions="Center" TextColor="Blue" />
+                        </Grid>
+                    </Frame>
+           </StackLayout>
+                 </ScrollView>
+        </Grid>
+    </Grid>
+  
 </ContentPage>
 

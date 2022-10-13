@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+     Shell.NavBarIsVisible="False"
+     xmlns:fonts="clr-namespace:Grocedy.Style.Icons"
+    x:Class="DMarkitMobile.Views.AccountPage">
+     <Grid
+        Padding="15,10,15,10"
+        BackgroundColor="{StaticResource Light}"
+        RowDefinitions="30,*">
+        <Grid>
+            <!--<Label VerticalOptions="Center" HorizontalOptions="End" FontFamily="IconFont" Text="{x:Static fonts:IconFont.Bell}" TextColor="Blue">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>-->
+                <Label Text="Account Settings" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
+        </Grid>
+        <ScrollView Grid.Row="1" Margin="0,20,0,0">
+            <Grid RowDefinitions="Auto,*" RowSpacing="20">
+                
+                <StackLayout Grid.Row="0" Orientation="Horizontal">
+                    <Frame HasShadow="False"
+                        CornerRadius="50"
+                        HeightRequest="100"
+                        WidthRequest="100">
+                        <Image Source="profile.jpg" />
+                    </Frame>
+                    <!--<Frame
+                        CornerRadius="50"
+                        HeightRequest="100"
+                        WidthRequest="100">
+                        <ffsvg:SvgCachedImage
+                            HeightRequest="100"
+                            Source="profilepic.jpg"
+                            WidthRequest="100" />
+                    </Frame>-->
+                    <StackLayout Margin="10,0,0,0" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal" >
+                            <Label Style="{StaticResource SemiBoldText}" Text="Jason Moosa " />
+                            <Label
+                                FontFamily="IconFont"
+                                FontSize="20"
+                                HorizontalOptions="Start"
+                                Text="{x:Static fonts:IconFont.Pen}"
+                                TextColor="Black"
+                                VerticalOptions="Center" />
+                        </StackLayout>
+                        <Label Style="{StaticResource SubtitleText}" Text="jasonMoosa@gmail.com" />
+                    </StackLayout>
+
+                </StackLayout>
+
+                <StackLayout
+                    Grid.Row="1"
+                    Margin="0,20,0,0"
+                    Padding="10">
+                    
+                    <Grid RowDefinitions="50,1">
+                        <Label Style="{StaticResource SemiBoldText}" Text="Change Pin" FontSize="18" VerticalOptions="Center"/>
+                        <Label
+                            FontFamily="IconFont"
+                            FontSize="20"
+                            HorizontalOptions="End"
+                            Text="{x:Static fonts:IconFont.MenuRight}"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                        <BoxView Grid.Row="1" BackgroundColor="AliceBlue" />
+                    </Grid>
+                    <Grid RowDefinitions="50,1">
+                        <Label Style="{StaticResource SemiBoldText}" Text="Change Password"  FontSize="18" VerticalOptions="Center" />
+                        <Label
+                            FontFamily="IconFont"
+                            FontSize="20"
+                            HorizontalOptions="End"
+                            Text="{x:Static fonts:IconFont.MenuRight}"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                        <BoxView Grid.Row="1" BackgroundColor="AliceBlue" />
+                    </Grid>
+                    <Grid RowDefinitions="50,1">
+                        <Label Style="{StaticResource SemiBoldText}" Text="Add Card"  FontSize="18" VerticalOptions="Center"/>
+                        <Label
+                            FontFamily="IconFont"
+                            FontSize="20"
+                            HorizontalOptions="End"
+                            Text="{x:Static fonts:IconFont.MenuRight}"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                        <BoxView Grid.Row="1" BackgroundColor="AliceBlue" />
+                    </Grid>
+                    <Grid RowDefinitions="50,1">
+                        <Label Style="{StaticResource SemiBoldText}" Text="Payment"  FontSize="18" VerticalOptions="Center"/>
+                        <Label
+                            FontFamily="IconFont"
+                            FontSize="20"
+                            HorizontalOptions="End"
+                            Text="{x:Static fonts:IconFont.MenuRight}"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                    </Grid>
+
+
+                    <Grid RowDefinitions="50,1">
+                        <Label Style="{StaticResource SemiBoldText}" Text="App Notification"  FontSize="18" VerticalOptions="Center" />
+                        <Switch
+                            HorizontalOptions="End"
+                            IsToggled="True"
+                            OnColor="{StaticResource BlueColor}"
+                            VerticalOptions="Center" />
+                        <BoxView Grid.Row="1" BackgroundColor="AliceBlue" />
+                    </Grid>
+
+                    <Grid RowDefinitions="50,1">
+                        <Label Style="{StaticResource SemiBoldText}" Text="Promotions"  FontSize="18" VerticalOptions="Center" />
+                        <Switch
+                            HorizontalOptions="End"
+                            IsToggled="True"
+                            OnColor="{StaticResource BlueColor}"
+                            VerticalOptions="Center" />
+                        <BoxView Grid.Row="1" BackgroundColor="AliceBlue" />
+                    </Grid>
+
+                </StackLayout>
+
+            </Grid>
+
+        </ScrollView>
+
+
+    </Grid>
+
+</ContentPage>
+

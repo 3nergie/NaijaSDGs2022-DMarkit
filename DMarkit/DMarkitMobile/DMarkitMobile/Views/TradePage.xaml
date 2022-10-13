@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+     Shell.NavBarIsVisible="False"
+     xmlns:fonts="clr-namespace:Grocedy.Style.Icons"
+    x:Class="DMarkitMobile.Views.TradePage">
+    <Grid RowSpacing="0" RowDefinitions="Auto,*">
+         <Grid BackgroundColor="#173D8E" Opacity=".9" RowDefinitions="Auto,*,30" Padding="20,30,30,40">
+             <Label Text="Trade Currency" Style="{StaticResource SemiBoldText}" TextColor="{StaticResource Light}" HorizontalOptions="Center"/>
+            <Grid Grid.Row="1" Padding="10,20,0,0"  ColumnDefinitions="*, Auto">
+                <StackLayout Grid.Column="0" HorizontalOptions="Start">
+                    <Label Text="Avaliable Balance" FontSize="18"  TextColor="{StaticResource Light}" VerticalOptions="Center" />
+                <Label Text="₦ 13,200.00" Style="{StaticResource SemiBoldText}" FontSize="24"  TextColor="{StaticResource Light}" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <Frame Grid.Column="1" HasShadow="False" Padding="10" Margin="0" VerticalOptions="Center" CornerRadius="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="GBP - NGN" VerticalOptions="Center" Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="Black"/>
+                        <Label FontFamily="IconFont" Text="{x:Static fonts:IconFont.ChevronDown}" VerticalOptions="Center"  Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="Black"/>
+                    </StackLayout>
+
+                </Frame>
+
+            </Grid>
+
+                  <Label Text="GBP - NGN" Grid.Row="2"  FontFamily="PacificoRegular"  VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="{StaticResource Light}"/>
+        </Grid>
+
+        <Grid Grid.Row="1" BackgroundColor="{StaticResource LightBackGroundGray}">
+            <ScrollView>
+
+
+            <StackLayout Padding="20">
+                <Frame HasShadow="False" CornerRadius="10">
+                   <Grid RowDefinitions="Auto, 1, *">
+                        <Label Text="Ade Johnson" Style="{StaticResource SemiBoldText}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="Active" VerticalOptions="Center" HorizontalOptions="End" TextColor="Blue"/>
+                        <BoxView BackgroundColor="{StaticResource LightBlack}" Opacity=".5" Grid.Row="1" HeightRequest="1"/>
+                        <Grid ColumnDefinitions="* ,*" Grid.Row="2">
+                            <StackLayout>
+                                <Label Text="Amount" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="£ 1,500.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+
+                              <StackLayout Grid.Column="1" HorizontalOptions="End">
+                                <Label Text="Rate" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="₦ 830.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+
+                </Frame>
+
+                 <Frame HasShadow="False" CornerRadius="10">
+                   <Grid RowDefinitions="Auto, 1, *">
+                        <Label Text="Olaolu James" Style="{StaticResource SemiBoldText}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="Active" VerticalOptions="Center" HorizontalOptions="End" TextColor="Blue"/>
+                        <BoxView BackgroundColor="{StaticResource LightBlack}" Opacity=".5" Grid.Row="1" HeightRequest="1"/>
+                        <Grid ColumnDefinitions="* ,*" Grid.Row="2">
+                            <StackLayout>
+                                <Label Text="Amount" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="£ 2,000.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+
+                              <StackLayout Grid.Column="1" HorizontalOptions="End">
+                                <Label Text="Rate" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="₦ 840.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+
+                </Frame>
+
+                 <Frame HasShadow="False" CornerRadius="10">
+                   <Grid RowDefinitions="Auto, 1, *">
+                        <Label Text="Peter John" Style="{StaticResource SemiBoldText}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="Active" VerticalOptions="Center" HorizontalOptions="End" TextColor="Blue"/>
+                        <BoxView BackgroundColor="{StaticResource LightBlack}" Opacity=".5" Grid.Row="1" HeightRequest="1"/>
+                        <Grid ColumnDefinitions="* ,*" Grid.Row="2">
+                            <StackLayout>
+                                <Label Text="Amount" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="£ 20,000.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+
+                              <StackLayout Grid.Column="1" HorizontalOptions="End">
+                                <Label Text="Rate" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="₦ 832.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+
+                </Frame>
+
+                 <Frame HasShadow="False" CornerRadius="10">
+                   <Grid RowDefinitions="Auto, 1, *">
+                        <Label Text="Ade Johnson" Style="{StaticResource SemiBoldText}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="Active" VerticalOptions="Center" HorizontalOptions="End" TextColor="Blue"/>
+                        <BoxView BackgroundColor="{StaticResource LightBlack}" Opacity=".5" Grid.Row="1" HeightRequest="1"/>
+                        <Grid ColumnDefinitions="* ,*" Grid.Row="2">
+                            <StackLayout>
+                                <Label Text="Amount" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="£ 3,500.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+
+                              <StackLayout Grid.Column="1" HorizontalOptions="End">
+                                <Label Text="Rate" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="₦ 824.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+
+                </Frame>
+                 <Frame HasShadow="False" CornerRadius="10">
+                   <Grid RowDefinitions="Auto, 1, *">
+                        <Label Text="Ade Johnson" Style="{StaticResource SemiBoldText}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="Active" VerticalOptions="Center" HorizontalOptions="End" TextColor="Blue"/>
+                        <BoxView BackgroundColor="{StaticResource LightBlack}" Opacity=".5" Grid.Row="1" HeightRequest="1"/>
+                        <Grid ColumnDefinitions="* ,*" Grid.Row="2">
+                            <StackLayout>
+                                <Label Text="Amount" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="£ 5,500.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+
+                              <StackLayout Grid.Column="1" HorizontalOptions="End">
+                                <Label Text="Rate" TextColor="Black"  Style="{StaticResource SubtitleText}" />
+                                <Label Text="₦ 840.00"   Style="{StaticResource SemiBoldText}" FontSize="16" TextColor="#173D8E"/>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+
+                </Frame>
+            </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </Grid>
+</ContentPage>
+

@@ -14,17 +14,17 @@
          <StackLayout Spacing="20">
              <Grid>
                 <!--<Label VerticalOptions="Center" HorizontalOptions="Start" FontFamily="IconFont" Text="{x:Static fonts:IconFont.ArrowLeft}"/>-->
-                 <Label Text="Sign Up" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
+                 <Label Text="Sign In" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
               </Grid>
                <control:CustomEntryView TitleText="FirstName" PlaceHolderText="Enter your first name"  IsRequired="True"/>
             <control:CustomEntryView TitleText="Password" PlaceHolderText="Enter your password"  IsRequired="True" IsPassWordImage="True"/>
               <Label Style="{StaticResource SubtitleText}">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span CharacterSpacing="2" Text="Already have an account? " />
+                            <Span CharacterSpacing="2" Text="Don't have an account? " />
                             <Span
                                 CharacterSpacing="3"
-                                Text="Sign In"
+                                Text="Sign Up"
                                 TextColor="{StaticResource BlueColor}">
                                 <Span.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="Register_Tapped" />
@@ -39,7 +39,7 @@
                         <TapGestureRecognizer   Tapped="TapGestureRecognizer_Tapped"/>
                     </Label.GestureRecognizers>
                 </Label>
-             <Button Text="Sigin In" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked"  VerticalOptions="Center"/>
+             <Button Text="Sign In" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked"  VerticalOptions="Center"/>
 
             </StackLayout>
             <StackLayout Margin="0,20,0,0" Grid.Row="1" >

@@ -14,8 +14,8 @@
         </StackLayout>
 
         <StackLayout VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="1">
-            <Button Text="Sigin In" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked" />
-            <Button Text="Sigin Up" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked_1" Margin="0,20,0,0"/>
+            <Button Text="Sign In" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked" />
+            <Button Text="Sign Up" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked_1" Margin="0,20,0,0"/>
         </StackLayout>
     </Grid>
 </ContentPage>

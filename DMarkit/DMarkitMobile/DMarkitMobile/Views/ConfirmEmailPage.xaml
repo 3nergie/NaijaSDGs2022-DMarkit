@@ -19,7 +19,7 @@
                 </Label>
                  <Label Text="Confirm Email" Style="{StaticResource SemiBoldText}" HorizontalOptions="Center"/>
         </Grid>
-            <control:CustomEntryView TitleText="Confirm Email" PlaceHolderText="Enter code toconfirm email" IsRequired="True" />
+            <control:CustomEntryView TitleText="Confirm Email" PlaceHolderText="Enter code to confirm email" IsRequired="True" />
              <Label Style="{StaticResource SubtitleText}">
                     <Label.FormattedText>
                         <FormattedString>

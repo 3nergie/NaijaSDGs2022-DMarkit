@@ -39,7 +39,7 @@
                     </Label.FormattedText>
            </Label>
         </StackLayout>
-             <Button Text="Sigin Up" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked"  Grid.Row="1" VerticalOptions="Center"/>
+             <Button Text="Sign Up" Style="{StaticResource ButttonStyle}" Clicked="Button_Clicked"  Grid.Row="1" VerticalOptions="Center"/>
 
       </Grid>
 </ContentPage>
